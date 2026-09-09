@@ -798,8 +798,14 @@ void PerformTransactionsMenuOption(enTransactionsMenuOptions TransactionMenuOpti
     {
 
         ShowMainMenu();
+        break;
 
     }
+
+    default:
+        cout << "\nInvalid choice, please enter a number between 1 and 4.";
+        GoBackToTransactionsMenu();
+        break;
     }
 
 }
@@ -866,6 +872,11 @@ void PerformMainMenuOption(enMainMenuOptions MainMenuOption)
     case enMainMenuOptions::eExit:
         system("cls");
         ShowEndScreen();
+        break;
+
+    default:
+        cout << "\nInvalid choice, please enter a number between 1 and 7.";
+        GoBackToMainMenu();
         break;
     }
 
