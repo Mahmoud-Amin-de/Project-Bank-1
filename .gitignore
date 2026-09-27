@@ -402,3 +402,4 @@ FodyWeavers.xsd
 
 # Project-specific: local runtime data, not part of source
 Clients.txt
+Users.txt
